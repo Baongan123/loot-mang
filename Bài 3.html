@@ -89,9 +89,9 @@
                         dem += 1;
                     }
                 }
-                if (dem == 1) { 
+                if (dem == 1) {
                     nguyento += 1
-                document.write(m[i][j] + "    ;   ")
+                    document.write(m[i][j] + "    ;   ")
                 }
             }
         }
@@ -101,31 +101,31 @@
 
 
         //3.6  Hiển thị dòng có tổng các giá trị của dòng đó lớn nhất của mảng 2 chiều
-        let maxhang=0;
+        let maxhang = 0;
         let sumhang;
         let q;
-        for (i = 0; i<5; i++){
-            sumhang=0;
-            for (j=0; j<5; j++){
+        for (i = 0; i < 5; i++) {
+            sumhang = 0;
+            for (j = 0; j < 5; j++) {
                 sumhang += m[i][j];
             }
-            if (sumhang >maxhang){
+            if (sumhang > maxhang) {
                 maxhang = sumhang
-                q=i;
+                q = i;
             }
         }
-        document.write("tổng giá trị của hàng lớn nhất trong dãy là: " +m[q].join('+')+"="+maxhang);
+        document.write("tổng giá trị của hàng lớn nhất trong dãy là: " + m[q].join('+') + "=" + maxhang);
         document.write("<br>");
-      
-        
-        
-        
+
+
+
+
         //3.7 Hiển thị tổng các giá trị trên đường chéo chính của mảng 2 chiều
         let sumchinh = 0;
         for (i = 0; i < 5; i++) {
             sumchinh += m[i][i];
         }
-        document.write ("tổng giá trị của đường chéo chính của mảng là: "+ sumchinh) 
+        document.write("tổng giá trị của đường chéo chính của mảng là: " + sumchinh)
         document.write("<br>");
 
         //3.8 Hiển thị tổng các giá trị trên đường chéo phụ của mảng 2 chiều
@@ -139,8 +139,8 @@
 
         //3.9 Hiển thị tổng các giá trị ở đường biên của mảng 2 chiều
         let sum = 0;
-        for (let i =0; i <5; i++){
-            if (m[i]==0 || m[i]==4){
+        for (let i = 0; i < 5; i++) {
+            if (m[i] == 0 || m[i] == 4) {
                 sum = sum + m[i][j];
             }
             else {
