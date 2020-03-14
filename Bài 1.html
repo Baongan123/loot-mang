@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let m=Array();
+    for (let i=0;i<10;i++){
+        m[i]=Math.floor(Math.random()*10+20);
+        document.write(m[i]+" ; ");
+    }
+    let n=+prompt("nhập số");
+    let kt =0
+    for ( let i=0; i<10; i++){
+        if (m[i]==n){
+            kt += 1
+        }
+    }    
+        if (kt == 0) {
+            alert ("không xuất hiện");
+        }
+        else {
+            alert ("có xuất hiện");
+        }
+    
+  
+    </script>
+</body>
+</html>
